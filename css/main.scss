@@ -1,0 +1,72 @@
+---
+# FrontMatter to proper processing by SASS
+---
+
+$layout-breakpoint-small: 800px;
+$fonts-header: Georgia, serif;
+$fonts-default: Verdana,sans-serif;
+$color: #333;
+$margin: 16px;
+$border: 1px $color solid;
+$default-font-size: 15px;
+// 36 30 24 20 18 16
+$padding: 4px;
+
+.material-icons {
+    font-size: inherit;
+}
+
+html, body {
+    font-family: $fonts-default;
+    font-size: $default-font-size;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: auto;
+    color: $color;
+}
+html {
+    overflow-x:hidden
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    .leftside {
+	font-family: $fonts-header;
+    }
+    .rightside {
+	flex-basis: 100%;
+	.quote {
+	    font-style: italic;
+	    text-align: center;
+	    margin-bottom: 8px;
+	}
+	.text {
+	    text-align: justify;
+	}
+    }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+    .card {
+	flex-direction: column;
+	.leftside, .rightside {
+	    flex-basis: 100%;
+	}
+    }
+}
+
+@media screen and (min-width: $layout-breakpoint-small+1) {
+    .card {
+	.leftside {
+	    flex-basis: 300px;
+	    margin-right: $margin*2;
+	}
+    }
+}
+
+#header.card{
+    .leftside, .rightside {
+	flex-basis: 50%;
+    }
+}

@@ -1,0 +1,150 @@
+$layout-breakpoint-small: 800px;
+$fonts-header: Helvetica, Arial, sans-serif;
+$margin: 16px;
+$color: #333;
+$border-step: 1px;
+$border: $border-step $color solid;
+$default-font-size: 15px;
+// 36 30 24 20 18 16
+$font-family: Verdana,sans-serif;
+$padding: 4px;
+
+html, body {
+    font-family: $font-family;
+    font-size: $default-font-size;
+    line-height:1.5;
+    max-width: 1200px;
+    margin: auto;
+    color: $color;
+}
+html {
+    overflow-x:hidden
+}
+
+/* ================================================== */
+/* Languages */
+
+#languages {
+    display: flex;
+    flex-direction: row;
+    
+    .lang {
+	margin: $margin;
+    }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+    #languages {
+	flex-direction: column;
+    }
+}
+/* ================================================== */
+/* Topcard */
+
+#topcard {
+    display: flex;
+    flex-direction: row;
+
+    .leftside, .rightside {
+	width: 50%;
+	margin: $margin;
+    }
+
+    .leftside {
+	font-family: $fonts-header;
+	.name {
+	    font-size: 36px;
+	}
+	.roles {
+	    font-size: 20px;
+	}
+    }
+
+    .rightside {
+	text-align: right;
+    }
+}
+@media screen and (max-width: $layout-breakpoint-small) {
+    #topcard {
+	flex-direction: column;
+	.leftside, .rightside {
+	    width: 100%;
+	}
+    }
+}
+
+#about {
+    @extend .section;
+    .photo {
+	text-align: center;
+	img {
+	    width: 200px;
+	    height: 200px;
+	}
+    }
+}
+
+.section {
+    .header {
+	font-family: $fonts-header;
+	border-bottom: 2px $color solid;
+	font-size: 30px;
+	text-align: center;
+	margin: $margin;
+	padding-bottom: $padding;
+    }
+
+    .card {
+	display: flex;
+	flex-direction: row;
+	margin: 2*$margin $margin;
+	.leftside {
+	    font-family: $fonts-header;
+	    .name {
+		font-size: 20px;
+		font-weight: bold;
+	    }
+	    .comment {
+		font-weight: bold;
+	    }
+	    .dates {
+	    }
+	    .hours {
+	    }
+	    .hours::before {
+		content: "Часов: ";
+	    }
+	    .url {
+		font-style: italic;
+	    }
+	    .level {
+	    }
+	}
+	.rightside {
+	    flex-basis: 100%;
+	    .quote {
+		font-style: italic;
+		text-align: center;
+		margin-bottom: 4px;
+	    }
+	    .text {
+		text-align: justify;
+	    }
+	}
+    }
+}
+@media screen and (max-width: $layout-breakpoint-small) {
+    .card {
+	flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $layout-breakpoint-small+1) {
+    .card .leftside {
+	flex-basis: 300px;
+	border-right: $border;
+	padding-right: $margin;
+	margin-right: $margin;
+    }
+}
+

@@ -1,0 +1,27 @@
+top:
+  name: "Константин Моренко"
+  roles: "автор | преподаватель | ученый"
+  links:
+  - prefix: Email
+    link: mailto:web@konstantin-morenko.ru
+    text: web@konstantin-morenko.ru
+  - prefix: Website
+    link: https://konstantin-morenko.ru
+    text: konstantin-morenko.ru
+about:
+  photo_file: photo.jpg
+  quote: |
+    У меня столько же интересов, сколько огоньков на газовой горелке
+  text: |
+    Короткая информация обо мне в паре абзацев
+sections:
+  languages:
+    header: Языки
+    id: languages
+    cards:
+    - name: Русский
+      level: Носитель
+    - name: Английский
+      level: C1
+    - name: Эсперанто
+      level: B1

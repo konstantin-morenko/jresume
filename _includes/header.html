@@ -1,0 +1,19 @@
+<div id="header" class="card">
+  <div class="leftside">
+    {% assign top = site.data.resume.top %}
+    <div class="name">{{ top.name }}</div>
+    <div class="roles">{{ top.roles }}</div>
+  </div>
+  <div class="rightside">
+    <div class="links">
+      {% for link in top.links %}
+      <div class="link">
+	<span class="prefix">{{ link.prefix }}:</span>
+	<span class="link">
+	  <a href="{{ link.link }}">{{ link.text }}</a>
+	</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

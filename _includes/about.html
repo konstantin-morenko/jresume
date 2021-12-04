@@ -1,0 +1,15 @@
+{% assign about = site.data.resume.about %}
+
+<div class="section" id="about">
+  <div class="header">Обо мне</div>
+
+  <div class="card">
+    <div class="leftside">
+      <div class="photo"><img src="{{ about.photo_file }}"></div>
+    </div>
+    <div class="rightside">
+      <div class="quote">{{ about.quote }}</div>
+      <div class="text">{{ about.text }}</div>
+    </div>
+  </div>
+</div>
