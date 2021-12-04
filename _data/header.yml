@@ -1,0 +1,12 @@
+name: "Константин Моренко"
+roles:
+- автор
+- преподаватель
+- ученый
+links:
+- prefix: Email
+  link: mailto:web@konstantin-morenko.ru
+  text: web@konstantin-morenko.ru
+- prefix: Website
+  link: https://konstantin-morenko.ru
+  text: konstantin-morenko.ru

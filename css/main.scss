@@ -16,16 +16,21 @@ $padding: 4px;
     font-size: inherit;
 }
 
-html, body {
+html {
+    overflow-x:hidden;
+}
+
+body {
     font-family: $fonts-default;
     font-size: $default-font-size;
     line-height: 1.5;
-    max-width: 1200px;
     margin: auto;
     color: $color;
+    max-width: 1200px;
 }
-html {
-    overflow-x:hidden
+
+#content {
+    margin: $margin;
 }
 
 .card {
@@ -60,13 +65,43 @@ html {
     .card {
 	.leftside {
 	    flex-basis: 300px;
-	    margin-right: $margin*2;
 	}
     }
 }
 
 #header.card{
+    margin: $margin*2 $margin;
+    justify-content: space-between;
     .leftside, .rightside {
-	flex-basis: 50%;
+	flex-basis: 47%;
+    }
+    .leftside {
+	margin-top: $margin*4;
+	.name, .roles {
+	    font-stretch: condensed;
+	    text-align: center;
+	}
+	.name {
+	    font-size: 36px;
+	}
+	.roles {
+	    font-size: 24px;
+	    display: flex;
+	    justify-content: center;
+	    span {
+		margin: 0 $padding;
+	    }
+	}
+    }
+    .rightside {
+	text-align: right;
+    }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+    #header.card {
+	.leftside {
+	    margin-top: 0;
+	}
     }
 }

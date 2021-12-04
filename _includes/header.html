@@ -1,12 +1,16 @@
 <div id="header" class="card">
   <div class="leftside">
-    {% assign top = site.data.resume.top %}
-    <div class="name">{{ top.name }}</div>
-    <div class="roles">{{ top.roles }}</div>
+    {% assign header = site.data.header %}
+    <div class="name">{{ header.name }}</div>
+    <div class="roles">
+      {% for role in header.roles %}
+      <span>{{ role }}</span>
+      {% endfor %}
+    </div>
   </div>
   <div class="rightside">
     <div class="links">
-      {% for link in top.links %}
+      {% for link in header.links %}
       <div class="link">
 	<span class="prefix">{{ link.prefix }}:</span>
 	<span class="link">
