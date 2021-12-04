@@ -7,7 +7,7 @@ $fonts-header: Georgia, serif;
 $fonts-default: Verdana,sans-serif;
 $color: #333;
 $margin: 16px;
-$border: 1px $color solid;
+$border: 2px $color solid;
 $default-font-size: 15px;
 // 36 30 24 20 18 16
 $padding: 4px;
@@ -38,9 +38,12 @@ body {
     flex-direction: row;
     .leftside {
 	font-family: $fonts-header;
+	flex: 0 0 300px;
+	padding-right: $margin;
     }
     .rightside {
 	flex-basis: 100%;
+	padding-left: $margin;
 	.quote {
 	    font-style: italic;
 	    text-align: center;
@@ -57,6 +60,10 @@ body {
 	flex-direction: column;
 	.leftside, .rightside {
 	    flex-basis: 100%;
+	    padding: 0;
+	}
+	.leftside {
+	    margin-bottom: $margin;
 	}
     }
 }
@@ -87,6 +94,7 @@ body {
 	.roles {
 	    font-size: 24px;
 	    display: flex;
+	    flex-flow: row wrap;
 	    justify-content: center;
 	    span {
 		margin: 0 $padding;
@@ -102,6 +110,33 @@ body {
     #header.card {
 	.leftside {
 	    margin-top: 0;
+	}
+    }
+}
+
+.section {
+    .header {
+	font-size: 30px;
+	font-stretch: condensed;
+	text-align: center;
+	border-bottom: $border;
+	margin: $margin*2 0;
+	
+    }
+}
+
+#about.section {
+    .card {
+	.leftside {
+	    text-align: center;
+	    .photo {
+		img {
+		    width: 200px;
+		    height: 200px;
+		    border-radius: 50%;
+		    border: $border;
+		}
+	    }
 	}
     }
 }
