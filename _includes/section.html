@@ -1,87 +1,32 @@
-<div class="section" {%- if section.id -%}id="{{section.id}}"{%- endif -%}>
+<div class="section" {% if include.section.id %} id="{{ include.section.id }}" {% endif %}>
   <div class="header">{{ include.section.header }}</div>
+
+  {% if include.section.description %}
+  <div class="quote">{{include.section.description}}</div>
+  {% endif %}
 
   {% for card in include.section.cards %}
   <div class="card">
     <div class="leftside">
       <div class="name">{{ card.name }}</div>
       {% if card.level %}
-      <div class="level">
-	{% if card.level == "B1" %}
-	<span class="material-icons">star</span>
-	<span class="material-icons">star_half</span>
-	<span class="material-icons">star_border</span>
-	{% endif %}
-	{% if card.level == "C1" %}
-	<span class="material-icons">star</span>
-	<span class="material-icons">star</span>
-	<span class="material-icons">star_half</span>
-	{% endif %}
-	{% if card.level == "Носитель" %}
-	<span class="material-icons">person</span>
-	{% endif %}
-	{{ card.level }}
-      </div>
+        {% include lang-level.html level = card.level %}
+      {% endif %}
+      {% if card.diploma %}
+      <div class="diploma">{{ card.diploma.name }}</div>
+      <div class="year">{{ card.diploma.year }}</div>
+      {% if card.diploma.hours %}
+      <div class="hours">{{ card.diploma.hours }}</div>
+      {% endif %}
+      {% endif %}
+      {% if card.link %}
+      <div class="link"><a href="{{ card.link.url }}">{{ card.link.name }}</a></div>
       {% endif %}
     </div>
     <div class="rightside">
-      <div class="quote">Lorem Ipsum</div>
-      <div class="text">Lorem Ipsum is simply dummy text of the
-	printing and typesetting industry. Lorem Ipsum has been the
-	industry's standard dummy text ever since the 1500s, when an
-	unknown printer took a galley of type and scrambled it to make
-	a type specimen book.</div>
+      <div class="quote">{{ card.quote }}</div>
+      <div class="text">{{ card.description }}</div>
     </div>
   </div>
   {% endfor %}
-
-  <div class="card">
-    <div class="leftside">
-      <div class="name">Английский</div>
-      <div class="level">C1</div>
-      <div class="comment">Сертификат EFSET</div>
-      <div class="dates">2005</div>
-    </div>
-    <div class="rightside">
-      <div class="quote">Lorem Ipsum</div>
-      <div class="text">Lorem Ipsum is simply dummy text of the
-	printing and typesetting industry. Lorem Ipsum has been the
-	industry's standard dummy text ever since the 1500s, when an
-	unknown printer took a galley of type and scrambled it to make
-	a type specimen book.</div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="leftside">
-      <div class="name">Русский</div>
-      <div class="level">Носитель</div>
-      <div class="comment">Сертификат EFSET</div>
-      <div class="dates">С рождения</div>
-    </div>
-    <div class="rightside">
-      <div class="quote">Lorem Ipsum</div>
-      <div class="text">Почему о родном языке всегда забывают? Lorem
-	Ipsum is simply dummy text of the printing and typesetting
-	industry. Lorem Ipsum has been the industry's standard dummy
-	text ever since the 1500s, when an unknown printer took a
-	galley of type and scrambled it to make a type specimen
-	book.</div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="leftside">
-      <div class="name">Эсперанто</div>
-      <div class="level">B1/B2</div>
-      <div class="comment">Носители</div>
-      <div class="dates">2017</div>
-    </div>
-    <div class="rightside">
-      <div class="quote">Lorem Ipsum</div>
-      <div class="text">Lorem Ipsum is simply dummy text of the
-	printing and typesetting industry. Lorem Ipsum has been the
-	industry's standard dummy text ever since the 1500s, when an
-	unknown printer took a galley of type and scrambled it to make
-	a type specimen book.</div>
-    </div>
-  </div>
 </div>

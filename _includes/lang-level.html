@@ -1,0 +1,37 @@
+{% assign level = include.level %}
+<div class="level">
+  {% if level == "A1" %}
+  <span class="material-icons">star_half</span>
+  <span class="material-icons">star_border</span>
+  <span class="material-icons">star_border</span>
+  {% endif %}
+  {% if level == "A2" %}
+  <span class="material-icons">star</span>
+  <span class="material-icons">star_border</span>
+  <span class="material-icons">star_border</span>
+  {% endif %}
+  {% if level == "B1" %}
+  <span class="material-icons">star</span>
+  <span class="material-icons">star_half</span>
+  <span class="material-icons">star_border</span>
+  {% endif %}
+  {% if level == "B2" %}
+  <span class="material-icons">star</span>
+  <span class="material-icons">star</span>
+  <span class="material-icons">star_border</span>
+  {% endif %}
+  {% if level == "C1" %}
+  <span class="material-icons">star</span>
+  <span class="material-icons">star</span>
+  <span class="material-icons">star_half</span>
+  {% endif %}
+  {% if level == "C2" %}
+  <span class="material-icons">star</span>
+  <span class="material-icons">star</span>
+  <span class="material-icons">star</span>
+  {% endif %}
+  {% if level == "Носитель" %}
+  <span class="material-icons">person</span>
+  {% endif %}
+  {{ level }}
+</div>
