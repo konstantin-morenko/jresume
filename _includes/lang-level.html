@@ -1,5 +1,6 @@
 {% assign level = include.level %}
 <div class="level">
+  <!-- Language levels -->
   {% if level == "A1" %}
   <span class="material-icons">star_half</span>
   <span class="material-icons">star_border</span>
@@ -32,6 +33,10 @@
   {% endif %}
   {% if level == "Носитель" %}
   <span class="material-icons">person</span>
+  {% endif %}
+  <!-- Education levels -->
+  {% if level == "Ученая степень" %}
+  <span class="material-icons">science</span>
   {% endif %}
   {{ level }}
 </div>

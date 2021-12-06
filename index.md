@@ -6,9 +6,9 @@ layout: default
 
 {% include about.html %}
 
-{% include section.html section = site.data.languages %}
+{% include languages.html %}
 
-{% include section.html section = site.data.diplomas %}
+{% include educations.html %}
 
 
 

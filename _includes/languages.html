@@ -1,5 +1,65 @@
-<!-- <div id="langs"> -->
-<!--   <div class="lang">Русский</div> -->
-<!--   <div class="lang">English</div> -->
-<!--   <div class="lang">Esperanto</div> -->
-<!-- </div> -->
+{% assign languages = site.data.languages %}
+
+<div class="section" id="languages">
+  <div class="header">{{ languages.header }}</div>
+
+  <div class="quote">{{ languages.description }}</div>
+
+  {% for lang in languages.cards %}
+  <div class="card">
+    <div class="leftside">
+      <div class="name">{{ lang.name }}</div>
+      {% if lang.level %}
+      {% assign level = lang.level %}
+      <div class="level">
+	{% if level == "A1" %}
+	<span class="material-icons">star_half</span>
+	<span class="material-icons">star_border</span>
+	<span class="material-icons">star_border</span>
+	{% endif %}
+	{% if level == "A2" %}
+	<span class="material-icons">star</span>
+	<span class="material-icons">star_border</span>
+	<span class="material-icons">star_border</span>
+	{% endif %}
+	{% if level == "B1" %}
+	<span class="material-icons">star</span>
+	<span class="material-icons">star_half</span>
+	<span class="material-icons">star_border</span>
+	{% endif %}
+	{% if level == "B2" %}
+	<span class="material-icons">star</span>
+	<span class="material-icons">star</span>
+	<span class="material-icons">star_border</span>
+	{% endif %}
+	{% if level == "C1" %}
+	<span class="material-icons">star</span>
+	<span class="material-icons">star</span>
+	<span class="material-icons">star_half</span>
+	{% endif %}
+	{% if level == "C2" %}
+	<span class="material-icons">star</span>
+	<span class="material-icons">star</span>
+	<span class="material-icons">star</span>
+	{% endif %}
+	{% if level == "Носитель" %}
+	<span class="material-icons">person</span>
+	{% endif %}
+	{{ level }}
+      </div>
+      {% endif %}
+      {% if lang.diploma %}
+      <div class="diploma">{{ lang.diploma.name }}</div>
+      <div class="year">{{ lang.diploma.year }}</div>
+      {% endif %}
+      {% if lang.link %}
+      <div class="link"><a href="{{ lang.link.url }}">{{ lang.link.name }}</a></div>
+      {% endif %}
+    </div>
+    <div class="rightside">
+      <div class="quote">{{ lang.quote }}</div>
+      <div class="text">{{ lang.description }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

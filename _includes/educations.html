@@ -1,0 +1,55 @@
+{% assign educations = site.data.educations %}
+
+<div class="section" id="educations">
+  <div class="header">{{ educations.header }}</div>
+
+  <div class="quote">{{ educations.description }}</div>
+
+  {% for ed in educations.cards %}
+  <div class="card">
+    <div class="leftside">
+      {% assign level = ed.level %}
+      <div class="level">
+	{% if level == "Ученая степень" %}
+	<span class="material-icons">science</span>
+	{% endif %}
+	{% if level == "Высшее образование" %}
+	<span class="material-icons">school</span>
+	{% endif %}
+	{% if level == "Профессиональная переподготовка" %}
+	<span class="material-icons">model_training</span>
+	{% endif %}
+	{{ level }}
+      </div>
+      <div class="name">
+	{{ ed.name }}
+	{% if ed.perfect %}
+	<span class="material-icons" title="Диплом с отличием">local_activity</span>
+	{% endif %}
+      </div>
+      <div class="speciality">{{ ed.speciality }}</div>
+      <div class="university">
+	<span class="material-icons">place</span>
+	{{ ed.university }}
+      </div>
+      <div class="years" title="Период обучения">
+	<span class="material-icons">calendar_month</span>
+	{{ ed.years }}
+      </div>
+      {% if ed.hours %}
+      <div class="hours" title="Объем в часах">
+	<span class="material-icons">schedule</span>
+	{{ ed.hours }}
+      </div>
+      {% endif %}
+      {% if ed.link %}
+      <div class="link"><a href="{{ ed.link.url }}">{{ ed.link.name }}</a></div>
+      {% endif %}
+    </div>
+    <div class="rightside">
+      <div class="quote">{{ ed.quote }}</div>
+      <div class="text">{{ ed.description }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
