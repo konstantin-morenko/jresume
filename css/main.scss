@@ -39,7 +39,7 @@ body {
     margin: $margin*2 0;
     .leftside {
 	font-family: $fonts-header;
-	flex: 0 0 300px;
+	flex: 1 0.5 200px;
 	padding-right: $margin;
 	.name {
 	    font-size: 24px;
@@ -55,7 +55,7 @@ body {
 	}
     }
     .rightside {
-	flex-basis: 100%;
+	flex: 1 1 100%;
 	padding-left: $margin;
 	.quote {
 	    font-style: italic;
