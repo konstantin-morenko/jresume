@@ -10,6 +10,11 @@
     <div class="rightside">
       <div class="quote">{{ about.quote }}</div>
       <div class="text">{{ about.text }}</div>
+      <div class="traits" id="traits">
+	{% for tr in about.traits %}
+	<div class="trait">{{ tr }}</div>
+	{% endfor %}
+      </div>
     </div>
   </div>
 </div>

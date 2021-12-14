@@ -1,4 +1,6 @@
 {% assign educations = site.data.educations %}
+{% assign hrs_icon = '<span class="material-icons" title="Объем в часах">schedule</span>'%}
+
 
 <div class="section" id="educations">
   <div class="header">{{ educations.header }}</div>
@@ -17,17 +19,19 @@
 	<span class="material-icons">school</span>
 	{% endif %}
 	{% if level == "Профессиональная переподготовка" %}
-	<span class="material-icons">model_training</span>
+	<span class="material-icons">lightbulb</span>
 	{% endif %}
 	{{ level }}
       </div>
       <div class="name">
 	{{ ed.name }}
-	{% if ed.perfect %}
-	<span class="material-icons" title="Диплом с отличием">local_activity</span>
-	{% endif %}
       </div>
       <div class="speciality">{{ ed.speciality }}</div>
+      {% if ed.perfect %}
+      <div class="perfect">
+	<span class="material-icons">local_activity</span> Диплом с отличием
+      </div>
+      {% endif %}
       <div class="university">
 	<span class="material-icons">place</span>
 	{{ ed.university }}

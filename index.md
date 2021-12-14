@@ -10,5 +10,5 @@ layout: default
 
 {% include educations.html %}
 
-
+{% include certificates.html %}
 

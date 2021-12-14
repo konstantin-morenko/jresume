@@ -1,0 +1,20 @@
+{% assign certificates = site.data.certificates %}
+
+<div class="section" id="certificates">
+  <div class="header">{{ certificates.header }}</div>
+
+  <div class="quote">{{ certificates.description }}</div>
+  <div class="cert-list">
+    {% for cert in certificates.list %}
+    <div class="certificate">
+      <div class="title">{{ cert.title }}</div>
+      <div class="description">{{ cert.description }}</div>
+      <div class="info">
+	<div class="date">{{ cert.date }}</div>
+	<div class="place">{{ cert.place }}</div>
+	<div class="value">{{ cert.value }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
