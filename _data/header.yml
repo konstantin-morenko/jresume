@@ -5,9 +5,11 @@ roles:
 - преподаватель
 - ученый
 links:
-- prefix: Email
+- icon: mail_outline
+  prefix: Email
   link: mailto:web@konstantin-morenko.ru
   text: web@konstantin-morenko.ru
-- prefix: Website
+- icon: language
+  prefix: Website
   link: https://konstantin-morenko.ru
   text: konstantin-morenko.ru

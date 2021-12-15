@@ -12,6 +12,9 @@
     <div class="links">
       {% for link in header.links %}
       <div class="link">
+	{% if link.icon %}
+	<span class="material-icons">{{ link.icon }}</span>
+	{% endif %}
 	<span class="prefix">{{ link.prefix }}:</span>
 	<span class="link">
 	  <a href="{{ link.link }}">{{ link.text }}</a>
