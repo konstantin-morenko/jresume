@@ -180,19 +180,18 @@ body {
 	    font-family: $fonts-header;
 	    margin-top: $margin;
 	    display: flex;
-	    .date {
-		flex-basis: 20%;
-		text-align: left;
-	    }
+	    flex-direction: column;
 	    .place {
-		text-align: center;
-		margin: 0 $margin;
+		font-style: italic;
+		display: flex;
+		flex-direction: row;
+		.icon {
+		    flex-basis: 20px;
+		}
+		.text {
+		    flex-basis: 100%;
+		}
 	    }
-	    .value {
-		flex-basis: 20%;
-		text-align: right;
-	    }
-		
 	}
     }
 }

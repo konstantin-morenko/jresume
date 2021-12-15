@@ -15,9 +15,22 @@
       </div>
       <div class="description">{{ cert.description }}</div>
       <div class="info">
-	<div class="date">{{ cert.date }}</div>
-	<div class="place">{{ cert.place }}</div>
-	<div class="value">{{ cert.value }}</div>
+	<div class="date">
+	  <span class="material-icons">calendar_month</span>
+	  {{ cert.date }}
+	</div>
+	<div class="place">
+	  <div class="icon">
+	    <span class="material-icons">place</span>
+	  </div>
+	  <div class="text">
+	    {{ cert.place }}
+	  </div>
+	</div>
+	<div class="value">
+	  <span class="material-icons">schedule</span>
+	  {{ cert.value }}
+	</div>
       </div>
     </div>
     {% endfor %}
