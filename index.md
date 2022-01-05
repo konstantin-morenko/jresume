@@ -12,3 +12,6 @@ layout: default
 
 {% include certificates.html %}
 
+<div style="font-family: Georgia, serif; font-size: 24px; text-align: center">
+Продолжение следует...
+</div>
