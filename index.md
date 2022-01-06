@@ -15,3 +15,9 @@ layout: default
 <div style="font-family: Georgia, serif; font-size: 24px; text-align: center">
 Продолжение следует...
 </div>
+
+<footer>
+<span class="material-icons">update</span>
+{{ site.time | date: "%Y" }}
+{{ site.data.header.name }}
+</footer>

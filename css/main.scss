@@ -20,6 +20,13 @@ html {
     overflow-x:hidden;
 }
 
+footer {
+    font-family: $fonts-header;
+    border-top: 2px $color solid;
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
 body {
     font-family: $fonts-default;
     font-size: $default-font-size;
