@@ -10,27 +10,43 @@
     {% for cert in certificates.list %}
     <div class="certificate">
       <div class="title">
-	<span class="material-icons">verified</span>
-	{{ cert.title }}
+	<div class="title-caption">
+	  <span class="material-icons">verified</span>
+	  {{ cert.title }}
+	</div>
       </div>
       <div class="description">{{ cert.description }}</div>
       <div class="info">
+	{% if cert.date %}
 	<div class="date">
-	  <span class="material-icons">calendar_month</span>
-	  {{ cert.date }}
-	</div>
-	<div class="place">
 	  <div class="icon">
-	    <span class="material-icons">place</span>
+	    <span class="material-icons">calendar_month</span>
 	  </div>
 	  <div class="text">
-	    {{ cert.place }}
+	    {{ cert.date }}
 	  </div>
 	</div>
-	<div class="value">
-	  <span class="material-icons">schedule</span>
-	  {{ cert.value }}
+	{% endif %}
+	{% if cert.place %}
+	<div class="place">
+	  <div class="icon">
+            <span class="material-icons">place</span>
+	  </div>
+	  <div class="text">
+            {{ cert.place }}
+	  </div>
 	</div>
+	{% endif %}
+	{% if cert.value %}
+	<div class="value">
+	  <div class="icon">
+	    <span class="material-icons">schedule</span>
+	  </div>
+	  <div class="text">
+	    {{ cert.value }}
+	  </div>
+	</div>
+	{% endif %}
       </div>
     </div>
     {% endfor %}

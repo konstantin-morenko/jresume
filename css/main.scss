@@ -172,12 +172,21 @@ body {
     .certificate {
 	flex-basis: 320px;
 	margin: 2*$margin;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	min-height: 250px;
 	.title {
+	    min-height: 80px;
 	    font-family: $fonts-header;
 	    font-size: 20px;
 	    text-align: center;
-	    margin-bottom: $margin;
+	    margin-bottom: auto;
 	    border-bottom: 1px $color solid;
+	    display: flex;
+	    .title-caption {
+		margin: auto;
+	    }
 	}
 	.description {
 	    text-align: center;
@@ -185,11 +194,10 @@ body {
 	}
 	.info {
 	    font-family: $fonts-header;
-	    margin-top: $margin;
+	    margin-top: auto;
 	    display: flex;
 	    flex-direction: column;
-	    .place {
-		font-style: italic;
+	    .place, .date, .value {
 		display: flex;
 		flex-direction: row;
 		.icon {
@@ -198,6 +206,9 @@ body {
 		.text {
 		    flex-basis: 100%;
 		}
+	    }
+	    .place {
+		font-style: italic;
 	    }
 	}
     }
