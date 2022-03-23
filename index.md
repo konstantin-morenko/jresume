@@ -12,6 +12,8 @@ layout: default
 
 {% include certificates.html %}
 
+{% include education-projects.html %}
+
 <div style="font-family: Georgia, serif; font-size: 24px; text-align: center">
 Продолжение следует...
 </div>

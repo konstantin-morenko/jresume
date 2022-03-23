@@ -1,0 +1,33 @@
+{% assign projects = site.data.projects.education %}
+{% assign hrs_icon = '<span class="material-icons" title="Объем в часах">schedule</span>'%}
+
+
+<div class="section" id="projects-education">
+  <div class="header">{{ projects.header }}</div>
+
+  <div class="quote"><a href="https://konstantin-morenko.ru/all-projects/">Все мои проекты</a></div>
+  <div class="quote">{{ projects.description }}</div>
+
+  {% for pr in projects.cards %}
+  <div class="card">
+    <div class="leftside">
+      <div class="name">
+	{{ pr.name }}
+      </div>
+      <div class="years" title="Сроки">
+	<span class="material-icons">calendar_month</span>
+	{{ pr.since }}—{%- if pr.till -%}{{ pr.till }}{%- else-%}<abbr title="Настоящее время">н.&nbsp;в.</abbr>{%- endif -%}
+      </div>
+      {% if pr.links %}
+        {% for ln in pr.links %}
+          <div class="link"><a href="{{ ln.url }}">{{ ln.name }}</a></div>
+	{% endfor %}
+      {% endif %}
+    </div>
+    <div class="rightside">
+      <div class="quote">{{ pr.quote }}</div>
+      <div class="text">{{ pr.description }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
