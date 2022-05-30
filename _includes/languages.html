@@ -55,6 +55,21 @@
       {% if lang.link %}
       <div class="link"><a href="{{ lang.link.url }}">{{ lang.link.name }}</a></div>
       {% endif %}
+      {% if lang.touch_typing %}
+      <div>
+	Слепой метод печати<br>
+        {% for layout in lang.touch_typing %}
+	<span class="material-icons">keyboard</span> <abbr title="Вариант (раскладка)">{{ layout.name }}</abbr>
+	{% if layout.kpm %}
+	{{ layout.kpm }}&nbsp;<abbr title="Знаков (символов) в минуту">зн/мин</abbr> 
+	{% endif %}
+	{% if layout.wpm %}
+	{{ layout.wpm }}&nbsp;<abbr title="Слов в минуту">сл/мин</abbr> 
+	{% endif %}
+	<br>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     <div class="rightside">
       <div class="quote">{{ lang.quote }}</div>

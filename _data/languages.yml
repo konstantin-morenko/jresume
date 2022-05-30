@@ -4,8 +4,13 @@ description: |
   Иностранные языки позволяют узнать другие культуры изнутри, и
   по-новому взглянуть на свою собственную
 cards:
+
 - name: Русский
   level: Носитель
+  touch_typing:
+  - name: йцукенг п/м
+    kpm: 259
+    wpm: 43
   quote: Родной язык не выбирают, но я рад, что это — русский
   description: |
 
@@ -23,6 +28,10 @@ cards:
   link:
     name: EF SET Diploma
     url: https://www.efset.org/cert/MiRbnh
+  touch_typing:
+  - name: qwerty
+    kpm: 260
+    wpm: 52
   quote: Это не иностранный язык, это международный язык
   description: |
 
@@ -36,6 +45,9 @@ cards:
 
 - name: Эсперанто
   level: B1/B2
+  touch_typing:
+  - name: ŝĝertŭ
+    kpm: 180
   quote: Язык, который учит понимать другие языки
   description: |
 
