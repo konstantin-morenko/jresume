@@ -14,6 +14,8 @@ layout: default
 
 {% include education-projects.html %}
 
+{% include books.html %}
+
 <div style="font-family: Georgia, serif; font-size: 24px; text-align: center">
 Продолжение следует...
 </div>

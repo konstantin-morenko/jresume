@@ -1,0 +1,43 @@
+{% assign books = site.data.books %}
+
+<div class="section" id="{{ books.id }}">
+  <div class="header">{{ books.header }}</div>
+
+  <div class="quote">{{ books.description }}</div>
+
+  {% for bk in books.cards %}
+  <div class="card">
+    <div class="leftside">
+      <div class="name">{{ bk.name }}</div>
+      <div class="categories">
+	{{ bk.categories | join: ", " }}
+      </div>
+      <div class="year">
+	<span class="material-icons">calendar_month</span>
+	{{ bk.year }}
+      </div>
+      <div class="value">
+	<span class="material-icons">book</span>
+	<abbr title="{{ bk.value.source }}">
+	  {{ bk.value.number }}
+	  {% if bk.value.metric == "страницы" %}
+	  стр.
+	  {% endif %}
+	</abbr>
+      </div>
+      <div class="links">
+	{% for ln in bk.links %}
+	<div class="link"><a href="{{ ln.url }}">{{ ln.name }}</a></div>
+	{% endfor %}
+      </div>
+      <div class="isbn">
+	ISBN: {{ bk.isbn }}
+      </div>
+    </div>
+    <div class="rightside">
+      <div class="quote">{{ bk.quote }}</div>
+      <div class="text">{{ bk.description }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
