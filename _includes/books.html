@@ -30,9 +30,11 @@
 	<div class="link"><a href="{{ ln.url }}">{{ ln.name }}</a></div>
 	{% endfor %}
       </div>
+      {% if bk.isbn %}
       <div class="isbn">
 	ISBN: {{ bk.isbn }}
       </div>
+      {% endif %}
     </div>
     <div class="rightside">
       <div class="quote">{{ bk.quote }}</div>
