@@ -7,7 +7,7 @@ cards:
 
 - name: БесСмертная
   categories: [роман, проза]
-  year: 2016
+  year: 2016-03-23
   value:
     number: 200
     metric: страницы
@@ -32,7 +32,7 @@ cards:
 
 - name: Как написать книгу
   categories: [руководство, учебник]
-  year: 2018
+  year: 2018-06-01
   value:
     number: 160
     metric: страницы
@@ -55,7 +55,7 @@ cards:
 
 - name: "Английский язык: карманный справочник"
   categories: [руководство, учебник]
-  year: 2022
+  year: 2022-06-10
   value:
     number: 115
     metric: страницы
@@ -84,7 +84,7 @@ cards:
 
 - name: Она
   categories: [поэзия]
-  year: 2022
+  year: 2022-06-20
   value:
     number: 60
     metric: страницы

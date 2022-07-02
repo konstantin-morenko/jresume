@@ -14,7 +14,7 @@
       </div>
       <div class="year">
 	<span class="material-icons">calendar_month</span>
-	{{ bk.year }}
+	<abbr title="{{ bk.year }}">{{ bk.year | date: "%Y" }}</abbr>
       </div>
       <div class="value">
 	<span class="material-icons">book</span>
