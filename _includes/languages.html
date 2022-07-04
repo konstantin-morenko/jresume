@@ -9,8 +9,8 @@
   <div class="card">
     <div class="leftside">
       <div class="name">{{ lang.name }}</div>
-      {% if lang.level %}
-      {% assign level = lang.level %}
+      {% if lang.level.value %}
+      {% assign level = lang.level.value %}
       <div class="level">
 	{% if level == "A1" %}
 	<span class="material-icons">star_half</span>
@@ -45,7 +45,13 @@
 	{% if level == "Носитель" %}
 	<span class="material-icons">person</span>
 	{% endif %}
-	{{ level }}
+	{% if lang.level.source %}
+	<abbr title="{{ lang.level.source }}">
+        {% endif %}
+        {{ lang.level.value }}
+	{% if lang.level.source %}
+	</abbr>
+	{% endif %}
       </div>
       {% endif %}
       {% if lang.diploma %}

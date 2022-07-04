@@ -6,7 +6,8 @@ description: |
 cards:
 
 - name: Русский
-  level: Носитель
+  level:
+    value: Носитель
   touch_typing:
   - name: йцукенг п/м
     kpm: 259
@@ -21,7 +22,9 @@ cards:
     культурной и научной традицией.  Пожалуй, отличный вариант.
 
 - name: Английский
-  level: C1
+  level:
+    value: C1
+    source: Диплом EF SET
   diploma:
     name: EF SET
     year: 2019
@@ -44,7 +47,9 @@ cards:
     английском языке включают хотя бы одного не-носителя.
 
 - name: Эсперанто
-  level: B1/B2
+  level:
+    value: B1/B2
+    source: Мнение носителя
   touch_typing:
   - name: ŝĝertŭ
     kpm: 180
