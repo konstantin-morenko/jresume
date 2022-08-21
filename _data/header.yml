@@ -4,12 +4,18 @@ roles:
 - автор
 - преподаватель
 - ученый
-links:
-- icon: mail_outline
-  prefix: Email
-  link: mailto:web@konstantin-morenko.ru
-  text: web@konstantin-morenko.ru
-- icon: language
-  prefix: Website
-  link: https://konstantin-morenko.ru
-  text: konstantin-morenko.ru
+link_blocks:
+- id: personal
+  list:
+  - icon: mail_outline
+    prefix: Email
+    link: mailto:web@konstantin-morenko.ru
+    text: web@konstantin-morenko.ru
+  - icon: language
+    prefix: Website
+    link: https://konstantin-morenko.ru
+    text: konstantin-morenko.ru
+- id: scientific
+- id: literature
+- id: programming
+  

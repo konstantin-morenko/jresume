@@ -17,8 +17,9 @@
       <img src="sagittarius.svg" style="height: 16px;">
       <abbr title="Да, и горжусь этим">Стрелец</abbr>
     </div>
-    <div class="link-block links">
-      {% for link in header.links %}
+    {% for link_block in header.link_blocks %}
+    <div class="link-block {{ link_block.id }}">
+      {% for link in link_block.list %}
       <div class="link">
 	{% if link.icon %}
 	<span class="material-icons">{{ link.icon }}</span>
@@ -30,6 +31,7 @@
       </div>
       {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </div>
 <div id="slogan" class="quote">
