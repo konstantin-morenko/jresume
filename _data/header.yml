@@ -6,6 +6,8 @@ roles:
 - ученый
 link_blocks:
 - id: personal
+  name: Контакты
+  open: true
   list:
   - icon: mail_outline
     prefix: Email
@@ -16,48 +18,47 @@ link_blocks:
     link: https://konstantin-morenko.ru
     text: konstantin-morenko.ru
 - id: scientific
+  name: Наука
+  icon: science
   list:
-  - icon: science
-    prefix: Elibrary
+  - prefix: Elibrary
     link: https://www.elibrary.ru/author_items.asp?authorid=705280
     text: 705280
-  - icon: science
-    prefix: OrcID
+  - prefix: OrcID
     link: https://orcid.org/0000-0003-3351-6428
     text: 0000-0003-3351-6428
-  - icon: science
-    prefix: Scopus
+  - prefix: Scopus
     link: https://www.scopus.com/authid/detail.uri?authorId=57201922327
     text: 57201922327
 - id: literature
+  name: Литература
+  icon: book
   list:
-  - icon: book
-    prefix: Литрес
+  - prefix: Литрес
     link: https://www.litres.ru/konstantin-morenko/
     text: konstantin-morenko
-  - icon: book
-    prefix: Ridero
+  - prefix: Ridero
     link: https://ridero.ru/author/morenko_konstantin_q8qs3/
     text: morenko_konstantin
-  - icon: book
-    prefix: Проза.ру
+  - prefix: Проза.ру
     link: https://proza.ru/avtor/kmoren
     text: kmoren
-  - icon: book
-    prefix: Яндекс.Дзен
+  - prefix: Яндекс.Дзен
     link: https://zen.yandex.ru/konstantin_morenko
     text: konstantin_morenko
 - id: programming
+  name: Программирование
+  icon: data_object
   list:
-  - icon: data_object
-    prefix: GitHub
+  - prefix: GitHub
     link: https://github.com/konstantin-morenko
     text: konstantin-morenko
-  - icon: data_object
-    prefix: StackExchange
+  - prefix: StackExchange
     link: https://stackexchange.com/users/7577417/konstantin-morenko
     text: konstantin-morenko
-  - icon: data_object
-    prefix: CTAN
+  - prefix: CTAN
     link: https://ctan.org/home/konstantin-morenko
     text: konstantin-morenko
+  - prefix: Pomodoro Timer
+    link: https://timer.konstantin-morenko.ru
+    text: timer.konstantin-morenko.ru
