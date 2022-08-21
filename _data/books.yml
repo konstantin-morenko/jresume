@@ -3,6 +3,21 @@ id: books
 description: |
   Книги — пожалуй, единственное, что сопровождало человечество со
   времен изобретения письменности
+
+link_block:
+- prefix: Литрес
+  link: https://www.litres.ru/konstantin-morenko/
+  text: konstantin-morenko
+- prefix: Ridero
+  link: https://ridero.ru/author/morenko_konstantin_q8qs3/
+  text: morenko_konstantin
+- prefix: Проза.ру
+  link: https://proza.ru/avtor/kmoren
+  text: kmoren
+- prefix: Яндекс.Дзен
+  link: https://zen.yandex.ru/konstantin_morenko
+  text: konstantin_morenko
+
 cards:
 
 - name: БесСмертная

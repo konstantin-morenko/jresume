@@ -162,6 +162,17 @@ body {
 	top: 0;
 	background-color: $background-color;
     }
+    .link-block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.link {
+	    width: 300px;
+	    text-align: center;
+	}
+    }
     .quote {
 	text-align: center;
 	font-style: italic;

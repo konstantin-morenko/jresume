@@ -30,22 +30,6 @@ link_blocks:
   - prefix: Scopus
     link: https://www.scopus.com/authid/detail.uri?authorId=57201922327
     text: 57201922327
-- id: literature
-  name: Литература
-  icon: book
-  list:
-  - prefix: Литрес
-    link: https://www.litres.ru/konstantin-morenko/
-    text: konstantin-morenko
-  - prefix: Ridero
-    link: https://ridero.ru/author/morenko_konstantin_q8qs3/
-    text: morenko_konstantin
-  - prefix: Проза.ру
-    link: https://proza.ru/avtor/kmoren
-    text: kmoren
-  - prefix: Яндекс.Дзен
-    link: https://zen.yandex.ru/konstantin_morenko
-    text: konstantin_morenko
 - id: programming
   name: Программирование
   icon: data_object

@@ -5,6 +5,17 @@
 
   <div class="quote">{{ books.description }}</div>
 
+  {% if books.link_block %}
+  <div class="link-block">
+    {% for ln in books.link_block %}
+    <div class="link">
+      {{ ln.prefix }}:
+      <a href="{{ ln.link }}">{{ ln.text }}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% for bk in books.cards %}
   <div class="card">
     <div class="leftside">
