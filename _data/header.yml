@@ -30,5 +30,34 @@ link_blocks:
     link: https://www.scopus.com/authid/detail.uri?authorId=57201922327
     text: 57201922327
 - id: literature
+  list:
+  - icon: book
+    prefix: Литрес
+    link: https://www.litres.ru/konstantin-morenko/
+    text: konstantin-morenko
+  - icon: book
+    prefix: Ridero
+    link: https://ridero.ru/author/morenko_konstantin_q8qs3/
+    text: morenko_konstantin
+  - icon: book
+    prefix: Проза.ру
+    link: https://proza.ru/avtor/kmoren
+    text: kmoren
+  - icon: book
+    prefix: Яндекс.Дзен
+    link: https://zen.yandex.ru/konstantin_morenko
+    text: konstantin_morenko
 - id: programming
-  
+  list:
+  - icon: data_object
+    prefix: GitHub
+    link: https://github.com/konstantin-morenko
+    text: konstantin-morenko
+  - icon: data_object
+    prefix: StackExchange
+    link: https://stackexchange.com/users/7577417/konstantin-morenko
+    text: konstantin-morenko
+  - icon: data_object
+    prefix: CTAN
+    link: https://ctan.org/home/konstantin-morenko
+    text: konstantin-morenko
