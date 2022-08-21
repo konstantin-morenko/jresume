@@ -16,6 +16,19 @@ link_blocks:
     link: https://konstantin-morenko.ru
     text: konstantin-morenko.ru
 - id: scientific
+  list:
+  - icon: science
+    prefix: Elibrary
+    link: https://www.elibrary.ru/author_items.asp?authorid=705280
+    text: 705280
+  - icon: science
+    prefix: OrcID
+    link: https://orcid.org/0000-0003-3351-6428
+    text: 0000-0003-3351-6428
+  - icon: science
+    prefix: Scopus
+    link: https://www.scopus.com/authid/detail.uri?authorId=57201922327
+    text: 57201922327
 - id: literature
 - id: programming
   
