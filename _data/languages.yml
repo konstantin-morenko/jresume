@@ -50,6 +50,11 @@ cards:
   level:
     value: B1/B2
     source: Мнение носителя
+  duolingo:
+    crowns:
+      gold: 345
+      total: 345
+      brilliant: 3
   touch_typing:
   - name: ŝĝertŭ
     kpm: 180
