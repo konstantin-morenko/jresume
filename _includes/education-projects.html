@@ -5,8 +5,18 @@
 <div class="section" id="projects-education">
   <div class="header">{{ projects.header }}</div>
 
-  <div class="quote"><a href="https://konstantin-morenko.ru/all-projects/">Все мои проекты</a></div>
   <div class="quote">{{ projects.description }}</div>
+
+  {% if projects.link_block %}
+  <div class="link-block">
+    {% for ln in projects.link_block %}
+    <div class="link">
+      {{ ln.prefix }}:
+      <a href="{{ ln.link }}">{{ ln.text }}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   {% for pr in projects.cards %}
   <div class="card">

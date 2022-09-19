@@ -2,8 +2,13 @@ header: Образовательные проекты
 id: teaching
 description: Одно дело — знать самому.  Другое — научить других
 
-cards:
+link_block:
+- prefix: Карточки для Anki
+  link: https://konstantin-morenko.ru/anki-decks/
+  text: anki-decks
 
+
+cards:
 
 - name: Коммерциализация научных разработок
   since: 2022
