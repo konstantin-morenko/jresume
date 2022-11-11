@@ -1,0 +1,37 @@
+{% assign microchip = site.data.microchip %}
+
+
+<div class="section" id="microchip">
+  <div class="header">{{ microchip.header }}</div>
+
+  <div class="quote">{{ microchip.description }}</div>
+
+  {% for mc in microchip.cards %}
+  <div class="card">
+
+    <div class="leftside">
+      <div class="name">
+	{{ mc.name }}
+      </div>
+      <div class="platform" title="Платформа">{{ mc.platform }}</div>
+      <div class="years" title="Периоды разработки">
+	<span class="material-icons">calendar_month</span>
+	{{ mc.years }}
+      </div>
+      <div class="sloc" title="Source Lines of Code / Количество строк кода">
+	SLOC: {{ mc.SLOC }}
+      </div>
+      {% if mc.link %}
+      <div class="link"><a href="{{ mc.link.url }}">{{ mc.link.name }}</a></div>
+      {% endif %}
+    </div>
+
+    <div class="rightside">
+      <div class="quote">{{ mc.quote }}</div>
+      <div class="text">{{ mc.description }}</div>
+    </div>
+
+  </div>
+  {% endfor %}
+
+</div>

@@ -16,6 +16,8 @@ layout: default
 
 {% include books.html %}
 
+{% include microchip.html %}
+
 <div style="font-family: Georgia, serif; font-size: 24px; text-align: center">
 Продолжение следует...
 </div>
