@@ -41,6 +41,10 @@ body {
     margin: $margin;
 }
 
+abbr, span[title] {
+    text-decoration: underline dotted;
+}
+
 .card {
     display: flex;
     flex-direction: row;
