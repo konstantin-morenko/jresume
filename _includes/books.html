@@ -25,16 +25,16 @@
       </div>
       <div class="year">
 	<span class="material-icons">calendar_month</span>
-	<abbr title="{{ bk.year }}">{{ bk.year | date: "%Y" }}</abbr>
+	<span title="{{ bk.year }}">{{ bk.year | date: "%Y" }}</span>
       </div>
       <div class="value">
 	<span class="material-icons">book</span>
-	<abbr title="{{ bk.value.source }}">
+	<span title="{{ bk.value.source }}">
 	  {{ bk.value.number }}
 	  {% if bk.value.metric == "страницы" %}
-	  стр.
+	  <abbr title="страницы">стр.</abbr>
 	  {% endif %}
-	</abbr>
+	</span>
       </div>
       <div class="links">
 	{% for ln in bk.links %}

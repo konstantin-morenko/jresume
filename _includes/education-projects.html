@@ -24,9 +24,9 @@
       <div class="name">
 	{{ pr.name }}
       </div>
-      <div class="years" title="Сроки">
+      <div class="years">
 	<span class="material-icons">calendar_month</span>
-	{{ pr.since }}—{%- if pr.till -%}{{ pr.till }}{%- else-%}<abbr title="Настоящее время">н.&nbsp;в.</abbr>{%- endif -%}
+	<span title="Сроки">{{ pr.since }}—{%- if pr.till -%}{{ pr.till }}{%- else-%}<abbr title="Настоящее время">н.&nbsp;в.</abbr>{%- endif -%}</span>
       </div>
       {% if pr.links %}
         {% for ln in pr.links %}

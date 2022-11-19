@@ -36,14 +36,14 @@
 	<span class="material-icons">place</span>
 	{{ ed.university }}
       </div>
-      <div class="years" title="Период обучения">
+      <div class="years">
 	<span class="material-icons">calendar_month</span>
-	{{ ed.years }}
+	<span title="Период обучения">{{ ed.years }}</span>
       </div>
       {% if ed.hours %}
-      <div class="hours" title="Объем в часах">
+      <div class="hours">
 	<span class="material-icons">schedule</span>
-	{{ ed.hours }}
+	<span title="Объем в часах">{{ ed.hours }}</span>
       </div>
       {% endif %}
       {% if ed.link %}

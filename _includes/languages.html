@@ -46,11 +46,11 @@
 	<span class="material-icons">person</span>
 	{% endif %}
 	{% if lang.level.source %}
-	<abbr title="{{ lang.level.source }}">
+	<span title="{{ lang.level.source }}">
         {% endif %}
         {{ lang.level.value }}
 	{% if lang.level.source %}
-	</abbr>
+	</span>
 	{% endif %}
       </div>
       {% endif %}
@@ -68,7 +68,7 @@
           <img src="crown.svg" style="height: 16px;">
 	  Duolingo:
 	  {% if crowns.date %}
-	  <abbr title="{{ crowns.date }}">
+	  <span title="{{ crowns.date }}">
           {% endif %}
 	    {{ crowns.gold }}
 	    {% if crowns.total %}
@@ -78,7 +78,7 @@
 	      + {{ lang.duolingo.crowns.brilliant }}
 	    {% endif %}
 	  {% if crowns.date %}
-	  </abbr>
+	  </span>
 	  {% endif %}
         </div>
         {% endif %}
@@ -87,7 +87,7 @@
       <div>
 	Слепой метод печати<br>
         {% for layout in lang.touch_typing %}
-	<span class="material-icons">keyboard</span> <abbr title="Вариант (раскладка)">{{ layout.name }}</abbr>
+	<span class="material-icons">keyboard</span> <span title="Вариант (раскладка)">{{ layout.name }}</span>
 	{% if layout.kpm %}
 	{{ layout.kpm }}&nbsp;<abbr title="Знаков (символов) в минуту">зн/мин</abbr> 
 	{% endif %}
