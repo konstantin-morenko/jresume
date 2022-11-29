@@ -8,7 +8,7 @@ cards:
   platform: PIC16F628A
   years: 2014, 2022
   language: C
-  SLOC: 466
+  SLOC: 343
 
   quote: Простой и незамысловатый счетчик времени — что может быть важнее?
   description: |
