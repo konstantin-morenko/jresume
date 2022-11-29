@@ -9,6 +9,7 @@ cards:
   years: 2014, 2022
   language: C
   SLOC: 343
+  releases: 2
 
   quote: Простой и незамысловатый счетчик времени — что может быть важнее?
   description: |

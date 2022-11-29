@@ -22,6 +22,9 @@
       <div class="sloc">
 	<abbr title="Source Lines of Code / Количество строк кода">SLOC</abbr>: {{ mc.SLOC }}
       </div>
+      {% if mc.releases %}
+      <div class="releases">Релизы (версии): {{ mc.releases }}</div>
+      {% endif %}
       {% if mc.link %}
       <div class="link"><a href="{{ mc.link.url }}">{{ mc.link.name }}</a></div>
       {% endif %}
