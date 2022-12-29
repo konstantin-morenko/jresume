@@ -61,28 +61,6 @@
       {% if lang.link %}
       <div class="link"><a href="{{ lang.link.url }}">{{ lang.link.name }}</a></div>
       {% endif %}
-      {% if lang.duolingo %}
-      {% if lang.duolingo.crowns %}
-        {% assign crowns = lang.duolingo.crowns %}
-        <div class="duolingo crowns">
-          <img src="crown.svg" style="height: 16px;">
-	  Duolingo:
-	  {% if crowns.date %}
-	  <span title="{{ crowns.date }}">
-          {% endif %}
-	    {{ crowns.gold }}
-	    {% if crowns.total %}
-              / {{ lang.duolingo.crowns.total }}
-            {% endif %}
-	    {% if crowns.brilliant %}
-	      + {{ lang.duolingo.crowns.brilliant }}
-	    {% endif %}
-	  {% if crowns.date %}
-	  </span>
-	  {% endif %}
-        </div>
-        {% endif %}
-      {% endif %}
       {% if lang.touch_typing %}
       <div>
 	Слепой метод печати<br>
