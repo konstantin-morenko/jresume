@@ -11,6 +11,9 @@ link_block:
 cards:
 
 - name: Коммерциализация научных разработок
+  links:
+    - name: Курс лекций
+      url: https://konstantin-morenko.ru/phd-commercialization-book/
   since: 2022
 
   quote: Важно не только сделать превосходный продукт, важно еще и продать его
@@ -24,7 +27,7 @@ cards:
 - name: Электротехнологии и аккумуляторы
   links:
     - name: Справочник по аккумуляторам и электрическим технологиям
-      link: https://battery-info.ru
+      url: https://battery-info.ru
   since: 2013
   till: 2015
 
@@ -37,7 +40,7 @@ cards:
 - name: Возобновляемая энергетика
   links:
     - name: 300 вопросов и ответов
-      link: https://konstantin-morenko.ru/phd-renewable-book/
+      url: https://konstantin-morenko.ru/phd-renewable-book/
   since: 2022
 
   quote:
