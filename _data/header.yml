@@ -17,19 +17,10 @@ link_blocks:
     prefix: Website
     link: https://konstantin-morenko.ru
     text: konstantin-morenko.ru
-- id: scientific
-  name: Наука
-  icon: science
-  list:
-  - prefix: Elibrary
-    link: https://www.elibrary.ru/author_items.asp?authorid=705280
-    text: 705280
-  - prefix: OrcID
-    link: https://orcid.org/0000-0003-3351-6428
-    text: 0000-0003-3351-6428
-  - prefix: Scopus
-    link: https://www.scopus.com/authid/detail.uri?authorId=57201922327
-    text: 57201922327
+  - icon: science
+    prefix: Научные труды
+    link: https://scientific.konstantin-morenko.ru/
+    text: scientific.konstantin-morenko.ru
 - id: programming
   name: Программирование
   icon: data_object
