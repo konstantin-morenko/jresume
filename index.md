@@ -24,6 +24,6 @@ layout: default
 
 <footer>
 <span class="material-icons">update</span>
-<abbr title="UTC {{ site.time | date: '%Y-%m-%d %H:%M' }}">{{ site.time | date: "%Y" }}</abbr>
+<span title="UTC {{ site.time | date: '%Y-%m-%d %H:%M' }}">{{ site.time | date: "%Y" }}</span>
 {{ site.data.header.name }}
 </footer>
