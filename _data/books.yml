@@ -60,6 +60,8 @@ cards:
     url: https://ridero.ru/books/kak_napisat_knigu_2/
   - name: ЛитРес
     url: https://www.litres.ru/konstantin-morenko/kak-napisat-knigu/
+  - name: Онлайн
+    url: https://konstantin-morenko.ru/howto-write-book/
   isbn: 978-5-4490-9522-0
 
   quote: Как рассказать другим о своих знаниях
@@ -80,7 +82,7 @@ cards:
     metric: страницы
     source: Из расчета 1.5 тысячи символов на страницу
   links:
-  - name: Сайт
+  - name: Онлайн
     url: https://konstantin-morenko.ru/english-collection/
 
   quote: Английский язык это не иностранный язык, это международный язык
