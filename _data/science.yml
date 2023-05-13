@@ -1,0 +1,47 @@
+
+header: Начные труды
+description: Наука — та же магия, только на батарейках
+
+cards:
+
+
+- name: Список научных трудов
+  link:
+    url: https://
+    name: somelink
+
+  quote: Не только написать статью, но и помнить весь список
+  description: |
+
+    Список научных трудов.
+
+
+- name: Форма отчета по ГОСТ 7.32-2017
+  link:
+    url: https://github.com/konstantin-morenko/report-732-2017
+    name: GitHub
+
+  quote: Не только написать статью, но и помнить весь список
+  description: |
+
+    Список научных трудов.
+
+
+- name: Как написать научную статью
+  link:
+    url: https://
+    name: somelink
+
+  quote: Не только написать статью, но и помнить весь список
+  description: |
+
+    Список научных трудов.
+
+
+more:
+
+- name: Пояснения формул в LaTeX
+
+  link:
+    url: \#eqexpl
+    name: Перейти

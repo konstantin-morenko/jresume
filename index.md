@@ -12,6 +12,8 @@ layout: default
 
 {% include certificates.html %}
 
+{% include science.html %}
+
 {% include education-projects.html %}
 
 {% include books.html %}

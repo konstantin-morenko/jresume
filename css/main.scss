@@ -85,6 +85,18 @@ abbr, span[title] {
     }
 }
 
+.more {
+    display: flex;
+    flex-direction: column;
+    .more-card {
+	margin: 2*$margin;
+	.name {
+	    border-bottom: $border;
+	}
+	.link {}
+    }
+}
+
 @media screen and (max-width: $layout-breakpoint-small) {
     .card {
 	flex-direction: column;

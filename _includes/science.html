@@ -1,0 +1,39 @@
+{% assign science = site.data.science %}
+
+
+<div class="section" id="science">
+  <div class="header">{{ science.header }}</div>
+
+  <div class="quote">{{ science.description }}</div>
+
+  {% for sc in science.cards %}
+  <div class="card">
+
+    <div class="leftside">
+      <div class="name">
+	{{ sc.name }}
+      </div>
+      {% if sc.link %}
+      <div class="link"><a href="{{ sc.link.url }}">{{ sc.link.name }}</a></div>
+      {% endif %}
+    </div>
+
+    <div class="rightside">
+      <div class="quote">{{ sc.quote }}</div>
+      <div class="text">{{ sc.description }}</div>
+    </div>
+
+  </div>
+  {% endfor %}
+
+  <div class="more">
+    {% for mr in science.more %}
+    <div class="more-card">
+      <div class="name">{{ mr.name }}</div>
+      <div class="link"><a href="{{ mr.link.url }}">{{ mr.link.name }}</a></div>
+    </div>
+
+    {% endfor %}
+  </div>
+  
+</div>
