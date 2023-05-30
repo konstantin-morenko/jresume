@@ -2,13 +2,19 @@
 header: Начные труды
 description: Наука — та же магия, только на батарейках
 
-cards:
+link_block:
 
+- prefix: Пояснения формул в LaTeX
+  link: \#eqexpl
+  text: eqexpl
+
+
+cards:
 
 - name: Список научных трудов
   link:
-    url: https://
-    name: somelink
+    url: https://scientific.konstantin-morenko.ru/
+    name: Онлайн
 
   quote: Не только написать статью, но и помнить весь список
   description: |
@@ -25,23 +31,3 @@ cards:
   description: |
 
     Список научных трудов.
-
-
-- name: Как написать научную статью
-  link:
-    url: https://
-    name: somelink
-
-  quote: Не только написать статью, но и помнить весь список
-  description: |
-
-    Список научных трудов.
-
-
-more:
-
-- name: Пояснения формул в LaTeX
-
-  link:
-    url: \#eqexpl
-    name: Перейти

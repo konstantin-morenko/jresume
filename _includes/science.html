@@ -6,6 +6,17 @@
 
   <div class="quote">{{ science.description }}</div>
 
+  {% if science.link_block %}
+  <div class="link-block">
+    {% for ln in scienct.link_block %}
+    <div class="link">
+      {{ ln.prefix }}:
+      <a href="{{ ln.link }}">{{ ln.text }}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% for sc in science.cards %}
   <div class="card">
 
@@ -26,14 +37,4 @@
   </div>
   {% endfor %}
 
-  <div class="more">
-    {% for mr in science.more %}
-    <div class="more-card">
-      <div class="name">{{ mr.name }}</div>
-      <div class="link"><a href="{{ mr.link.url }}">{{ mr.link.name }}</a></div>
-    </div>
-
-    {% endfor %}
-  </div>
-  
 </div>
