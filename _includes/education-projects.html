@@ -8,14 +8,7 @@
   <div class="quote">{{ projects.description }}</div>
 
   {% if projects.link_block %}
-  <div class="link-block">
-    {% for ln in projects.link_block %}
-    <div class="link">
-      {{ ln.prefix }}:
-      <a href="{{ ln.link }}">{{ ln.text }}</a>
-    </div>
-    {% endfor %}
-  </div>
+  {% include link-block.html block=projects.link_block %}
   {% endif %}
 
   {% for pr in projects.cards %}

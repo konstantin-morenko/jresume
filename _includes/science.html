@@ -7,14 +7,7 @@
   <div class="quote">{{ science.description }}</div>
 
   {% if science.link_block %}
-  <div class="link-block">
-    {% for ln in science.link_block %}
-    <div class="link">
-      {{ ln.prefix }}:
-      <a href="{{ ln.link }}">{{ ln.text }}</a>
-    </div>
-    {% endfor %}
-  </div>
+  {% include link-block.html block=science.link_block %}
   {% endif %}
 
   {% for sc in science.cards %}

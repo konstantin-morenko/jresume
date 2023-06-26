@@ -1,0 +1,8 @@
+<div class="link-block">
+  {% for ln in include.block %}
+  <div class="link">
+    {{ ln.prefix }}:
+    <a href="{{ ln.link }}">{{ ln.text }}</a>
+  </div>
+  {% endfor %}
+</div>
