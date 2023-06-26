@@ -14,8 +14,8 @@ link_block:
 - prefix: Проза.ру
   link: https://proza.ru/avtor/kmoren
   text: kmoren
-- prefix: Яндекс.Дзен
-  link: https://zen.yandex.ru/konstantin_morenko
+- prefix: Дзен
+  link: https://dzen.ru/konstantin_morenko
   text: konstantin_morenko
 
 cards:
