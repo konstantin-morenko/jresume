@@ -24,8 +24,8 @@ html {
 footer {
     font-family: $fonts-header;
     border-top: 2px $color solid;
-    padding-top: 16px;
-    margin-top: 16px;
+    padding-top: 4*$padding;
+    margin-top: $margin;
 }
 
 body {
@@ -59,10 +59,10 @@ abbr, span[title] {
 	}
 	.name {
 	    font-size: 24px;
-	    margin: 16px 0 8px 0;
+	    margin: $margin 0 0.5*$margin 0;
 	}
 	.speciality {
-	    margin: 8px 0 24px 0;
+	    margin: 0.5*$margin 0 1.5*$margin 0;
 	}
 	.link {
 	    font-style: italic;
@@ -77,7 +77,7 @@ abbr, span[title] {
 	.quote {
 	    font-style: italic;
 	    text-align: center;
-	    margin-bottom: 8px;
+	    margin-bottom: 0.5*$margin;
 	}
 	.text {
 	    text-align: justify;
@@ -141,10 +141,11 @@ abbr, span[title] {
 }
 
 #header .link-block {
-    margin-bottom: 16px;
+    margin-bottom: $margin;
 
     header {
 	text-decoration: underline;
+	margin-bottom: 0.5*$margin;
     }
 }
 
@@ -153,7 +154,7 @@ abbr, span[title] {
     font-style: italic;
     font-size: 20px;
     font-family: Georgia, serif;
-    margin: 16px 0;
+    margin: $margin 0;
 }
 
 @media screen and (max-width: $layout-breakpoint-small) {
