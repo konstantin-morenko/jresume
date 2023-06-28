@@ -7,7 +7,6 @@ roles:
 link_blocks:
 - id: personal
   name: Контакты
-  open: true
   list:
   - icon: mail_outline
     prefix: Email
@@ -17,23 +16,3 @@ link_blocks:
     prefix: Website
     link: https://konstantin-morenko.ru
     text: konstantin-morenko.ru
-  - icon: science
-    prefix: Научные труды
-    link: https://scientific.konstantin-morenko.ru/
-    text: scientific.konstantin-morenko.ru
-- id: programming
-  name: Программирование
-  icon: data_object
-  list:
-  - prefix: GitHub
-    link: https://github.com/konstantin-morenko
-    text: konstantin-morenko
-  - prefix: StackExchange
-    link: https://stackexchange.com/users/7577417/konstantin-morenko
-    text: konstantin-morenko
-  - prefix: CTAN
-    link: https://ctan.org/home/konstantin-morenko
-    text: konstantin-morenko
-  - prefix: Pomodoro Timer
-    link: https://timer.konstantin-morenko.ru
-    text: timer.konstantin-morenko.ru

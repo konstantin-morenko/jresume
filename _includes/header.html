@@ -18,14 +18,12 @@
       <span title="Да, и горжусь этим">Стрелец</span>
     </div>
     {% for link_block in header.link_blocks %}
-    <details class="link-block {{ link_block.id }}"
-	     {% if link_block.open %}open{%- endif %}>
-      <summary>
-	{% if link_block.icon %}
-	<span class="material-icons">{{ link_block.icon }}</span>
-	{% endif %}
-	{{ link_block.name }} [{{ link_block.list | size }}]
-      </summary>
+    <div class="link-block {{ link_block.id }}">
+      {% if link_block.icon %}
+      <span class="material-icons">{{ link_block.icon }}</span>
+      {% endif %}
+      <header>{{ link_block.name }}</header>
+
       {% for link in link_block.list %}
       <div class="link">
 	{% if link.icon %}
@@ -37,7 +35,7 @@
 	</span>
       </div>
       {% endfor %}
-    </details>
+    </div>
     {% endfor %}
   </div>
 </div>

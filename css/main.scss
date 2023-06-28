@@ -142,11 +142,10 @@ abbr, span[title] {
 
 #header .link-block {
     margin-bottom: 16px;
-}
 
-#header details summary {
-    margin-bottom: 8px;
-    cursor: pointer;
+    header {
+	text-decoration: underline;
+    }
 }
 
 #slogan.quote {
