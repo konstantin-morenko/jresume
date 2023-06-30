@@ -1,0 +1,45 @@
+header: Программирование
+id: programming
+description: |
+  Программист — это не профессия, это образ жизни, когда ты решаешь
+  проблемы с помощью автоматизации рутины
+
+link_block:
+- prefix: GitHub
+  link: https://github.com/konstantin-morenko
+  text: konstantin-morenko
+- prefix: StackExchange
+  link: https://stackexchange.com/users/7577417/konstantin-morenko
+  text: konstantin-morenko
+- prefix: CTAN
+  link: https://ctan.org/home/konstantin-morenko
+  text: konstantin-morenko
+
+
+cards:
+
+- name: Pomodoro Timer
+  name_url: https://timer.konstantin-morenko.ru
+  platform: web
+  languages: [HTML, CSS, JS]
+  years: 2022–2023
+  links:
+  - text: GitHub
+    url: https://github.com/konstantin-morenko/web-pomodoro
+  - text: Онлайн
+    url: https://timer.konstantin-morenko.ru
+  - text: Книга
+    url: https://konstantin-morenko.ru/rhythmic-work-book/
+
+  quote: У каждой работы есть ритм, осталось только подобрать идеальную гармонию
+  description: |
+
+    Я никогда не мог работать непрерывно по несколько часов.  Да и
+    обманывать себя, будто бы я «могу работать непрерывно по несколько
+    часов» я тоже не хотел.  Меня больше заботил результат, а не
+    количество отработанных часов.  Перепробовав много подходов, я
+    нашел идеальный для себя — метод интервальной (ритмичной) работы,
+    так же известный как «метод Помидора».  Метод настолько мне
+    понравился, что я даже сделал собственный таймер и написал книгу.
+
+

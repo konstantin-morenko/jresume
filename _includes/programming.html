@@ -1,0 +1,43 @@
+{% assign programming = site.data.programming %}
+
+
+<div class="section" id="programming">
+  <div class="header">{{ programming.header }}</div>
+
+  <div class="quote">{{ programming.description }}</div>
+
+  {% if programming.link_block %}
+  {% include link-block.html block=programming.link_block %}
+  {% endif %}
+
+  {% for prg in programming.cards %}
+  <div class="card">
+
+    <div class="leftside">
+      <div class="name">
+	{% if prg.name_url %}<a href="{{prg.name_url}}">{% endif %}
+	  {{ prg.name }}
+        {% if prg.name_url %}</a>{% endif %}
+      </div>
+      <div class="platform">Платформа: <span title="Платформа">{{ prg.platform }}</span></div>
+      <div class="languages">Язык: {{ prg.languages | join: ", " }}</div>
+      <div class="years">
+	<span class="material-icons">calendar_month</span>
+	<span title="Периоды разработки">{{ prg.years }}</span>
+      </div>
+      <div class="links">
+	{% for ln in prg.links %}
+	<div class="link"><a href="{{ ln.url }}">{{ ln.text }}</a></div>
+	{% endfor %}
+      </div>
+    </div>
+
+    <div class="rightside">
+      <div class="quote">{{ prg.quote }}</div>
+      <div class="text">{{ prg.description }}</div>
+    </div>
+
+  </div>
+  {% endfor %}
+
+</div>
