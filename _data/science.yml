@@ -7,7 +7,9 @@ link_block:
 - prefix: Пояснения формул в LaTeX
   link: \#eqexpl
   text: eqexpl
-
+- prefix: elibrary
+  link: https://elibrary.ru/author_items.asp?authorid=705280
+  text: 705280
 
 cards:
 
