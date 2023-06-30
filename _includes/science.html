@@ -17,8 +17,10 @@
       <div class="name">
 	{{ sc.name }}
       </div>
-      {% if sc.link %}
-      <div class="link"><a href="{{ sc.link.url }}">{{ sc.link.name }}</a></div>
+      {% if sc.links %}
+        {% for ln in sc.links %}
+          <div class="link"><a href="{{ ln.url }}">{{ ln.text }}</a></div>
+        {% endfor %}
       {% endif %}
     </div>
 

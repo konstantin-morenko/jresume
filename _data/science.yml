@@ -12,9 +12,9 @@ link_block:
 cards:
 
 - name: Список научных трудов
-  link:
-    url: https://scientific.konstantin-morenko.ru/
-    name: Онлайн
+  links:
+  - url: https://scientific.konstantin-morenko.ru/
+    text: Онлайн
 
   quote: Не только написать статью, но и помнить весь список
   description: |
@@ -29,9 +29,9 @@ cards:
 
 
 - name: Форма отчета по ГОСТ 7.32-2017
-  link:
-    url: https://github.com/konstantin-morenko/report-732-2017
-    name: GitHub
+  links:
+  - url: https://github.com/konstantin-morenko/report-732-2017
+    text: GitHub
 
   quote: Сделать научное открытие — только полдела; отчитаться о нем — вот где приключения
   description: |
