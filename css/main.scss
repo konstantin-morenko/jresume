@@ -165,6 +165,23 @@ abbr, span[title] {
     }
 }
 
+
+#topmenu {
+    display: flex;
+    flex-direction: row;
+    margin: $margin*2 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+	margin: 0.5*$margin;
+	width: 180px;
+	height: 50px;
+	flex-shrink: 0;
+	text-align: center;
+    }
+}
+
 .section {
     .header {
 	font-size: 30px;

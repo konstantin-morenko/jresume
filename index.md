@@ -4,6 +4,8 @@ layout: default
 
 {% include header.html %}
 
+{% include topmenu.html %}
+
 {% include about.html %}
 
 {% include languages.html %}

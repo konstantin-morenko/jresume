@@ -1,0 +1,25 @@
+menu:
+
+- name: Языки
+  anchor: \#languages
+
+- name: Дипломы | Квалификации
+  anchor: \#educations
+
+- name: Сертификаты
+  anchor: \#certificates
+
+- name: Начные труды
+  anchor: \#science
+
+- name: Образовательные проекты
+  anchor: \#projects-education
+
+- name: Книги и сайты
+  anchor: \#books
+
+- name: Программирование
+  anchor: \#programming
+
+- name: Программы для микроконтроллеров
+  anchor: \#microchip
