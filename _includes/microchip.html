@@ -2,12 +2,7 @@
 
 
 <div class="section" id="microchip">
-  <div class="header">
-    {{ microchip.header }}
-    <span class="material-icons" title="наверх" href="#top">
-      keyboard_double_arrow_up
-    </span>
-  </div>
+  {% include header_line.html header=microchip.header %}
 
   <div class="quote">{{ microchip.description }}</div>
 
