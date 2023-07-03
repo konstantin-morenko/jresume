@@ -1,9 +1,7 @@
 {% assign certificates = site.data.certificates %}
 
 <div class="section" id="certificates">
-  <div class="header">
-    {{ certificates.header }}
-  </div>
+  {% include header_line.html header=certificates.header %}
 
   <div class="quote">{{ certificates.description }}</div>
   <div class="cert-list">

@@ -1,7 +1,7 @@
 {% assign books = site.data.books %}
 
 <div class="section" id="{{ books.id }}">
-  <div class="header">{{ books.header }}</div>
+  {% include header_line.html header=books.header %}
 
   <div class="quote">{{ books.description }}</div>
 
