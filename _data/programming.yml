@@ -43,3 +43,23 @@ cards:
     понравился, что я даже сделал собственный таймер и написал книгу.
 
 
+- name: eqexpl
+  platform: LaTeX
+  languages: [LaTeX]
+  years: 2017–2022
+  links:
+  - text: GitHub
+    url: https://github.com/konstantin-morenko/latex-equation-explanation
+  - text: CTAN
+    url: https://ctan.org/pkg/eqexpl
+  - text: Описание
+    url: https://konstantin-morenko.ru/latex-equation-explanation/index.ru.html
+
+  quote: Красиво оформить формулу так же сложно, как и придумать ее
+  description: |
+
+    Как ученому, мне приходится оформлять свои труды.  И не только
+    формулы, но и пояснения к ним.  Я долго искал подходящий
+    инструмент, даже на StackExchange, но так и не нашел его.  В
+    результате пришлось сделать его самостоятельно.  Это — пакет для
+    верстки пояснений под формулы.
