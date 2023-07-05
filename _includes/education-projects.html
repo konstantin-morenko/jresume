@@ -17,6 +17,12 @@
       <div class="name">
 	{{ pr.name }}
       </div>
+      {% if pr.level %}
+      <div class="level">
+	<span class="material-icons">school</span>
+	{{ pr.level }}
+      </div>
+      {% endif %}
       <div class="years">
 	<span class="material-icons">calendar_month</span>
 	<span title="Сроки">{{ pr.since }}—{%- if pr.till -%}{{ pr.till }}{%- else-%}<abbr title="Настоящее время">н.&nbsp;в.</abbr>{%- endif -%}</span>
