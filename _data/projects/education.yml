@@ -14,7 +14,7 @@ cards:
   links:
     - name: Материалы по курсу
       url: https://konstantin-morenko.ru/bch-automation/
-  since: 2022
+  till: 2022
   level: Бакалавриат
 
   quote: Автоматические устройства окружают нас повсюду
@@ -31,7 +31,7 @@ cards:
   links:
     - name: Материалы по курсу
       url: https://konstantin-morenko.ru/bch-control-devices/
-  years: 2023
+  till: 2023
   level: Бакалавриат
 
   quote: Сбросить проблему принятия решений на бездушную машину
@@ -49,7 +49,8 @@ cards:
   links:
     - name: Материалы по курсу
       url: https://konstantin-morenko.ru/masters-project-management/
-  years: 2021–2022
+  since: 2021
+  till: 2022
   level: Магистратура
 
   quote: Любым процессом можно управлять.  Где тут панель управления?
@@ -68,7 +69,7 @@ cards:
       url: https://konstantin-morenko.ru/phd-commercialization/
     - name: Курс лекций
       url: https://konstantin-morenko.ru/phd-commercialization-book/
-  years: 2022
+  till: 2022
   level: Аспирантура
 
   quote: Важно не только сделать превосходный продукт, важно еще и продать его
@@ -125,7 +126,7 @@ cards:
       url: https://konstantin-morenko.ru/ped-practice-review/
     - name: pdf-файл
       url: https://konstantin-morenko.ru/ped-practice-review/ped-practice-review.pdf
-  years: 2019
+  till: 2019
 
   quote: Может ли аспирант преподавать?
   description: |
