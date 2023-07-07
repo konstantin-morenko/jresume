@@ -34,6 +34,8 @@ cards:
   links:
   - url: https://github.com/konstantin-morenko/report-732-2017
     text: GitHub
+  - url: https://github.com/konstantin-morenko/report-732-2017/archive/refs/heads/master.zip
+    text: zip-архив
 
   quote: Сделать научное открытие — только полдела; отчитаться о нем — вот где приключения
   description: |
