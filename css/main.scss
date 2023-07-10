@@ -61,6 +61,9 @@ abbr, span[title] {
 	.name {
 	    font-size: 24px;
 	    margin: $margin 0 0.5*$margin 0;
+	    a:link, a:visited {
+		color: $color;
+	    }
 	}
 	.speciality {
 	    margin: 0.5*$margin 0 1.5*$margin 0;
