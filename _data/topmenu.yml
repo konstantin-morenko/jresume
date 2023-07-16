@@ -3,23 +3,23 @@ menu:
 - name: Языки
   anchor: \#languages
 
-- name: Дипломы | Квалификации
+- name: Дипломы
   anchor: \#educations
 
 - name: Сертификаты
   anchor: \#certificates
 
-- name: Начные труды
+- name: Наука
   anchor: \#science
 
-- name: Образовательные проекты
+- name: Обучение
   anchor: \#projects-education
 
 - name: Книги и сайты
   anchor: \#books
 
-- name: Программирование
+- name: Программы
   anchor: \#programming
 
-- name: Программы для микроконтроллеров
+- name: Микроконтроллеры
   anchor: \#microchip
