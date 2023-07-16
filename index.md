@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% include header.html %}
-
 {% include topmenu.html %}
+
+{% include header.html %}
 
 {% include about.html %}
 
